@@ -1,0 +1,18 @@
+h1{
+	text-align:center;
+	color:red;
+	text-decoration:underline;
+	font-size: 80px;
+}
+
+ul{
+	text-align:center;
+	font-size: 30px;
+}
+
+html
+{
+	border-left: 175px white solid;
+	border-right: 175px white solid;
+	border-image:linear-gradient(#e6e6fa, #fff0f5, #ffe4e1) 30; 
+}
