@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" />
+    <title>Projet NSI: Site Web</title>
+</head>
+<body>
+	<h1>Spécification et mise au point</h1>
+	<p>Voici les exercices du chapitre spécification et mise au point et leur correction :</p>
+	
+	<p>
+		Exercice 87 : </br>
+		Soit le programme suivant :</br>
+	</p>	
+	<p><em>
+		def maximum_tableau(t):</br>
+			&emsp;&emsp;m = 0</br>
+			&emsp;&emsp;for i in range(len(t)):</br>
+			&emsp;&emsp;&emsp;&emsp;if t[i] > t[m] :</br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;m = i</br>
+			&emsp;&emsp;return m
+	</p></em>
+	<p><ol>
+		<li>Que fait cette fonction ?
+		<li>Que peut-on changer pour que cela soit plus clair ?
+		<li>Appliquer cette fonction sur un tableau vide. Que constate-t-on ? </br> Afficher le maximum de ce tableau en utilisant la valeur retournée</ol>
+	</p>
+	<p>
+		Correction <a href="Exercices/Documentation et débugage/exercice87.py">exercice 87</a> :</br>
+		<ol>
+		<li>La fonction permet de trouver l'indice du nombre le plus grand dans le tableau t
+		<li>On peut changer le nom de la variable m par indice_maximum et t par tab et changer le nom de la fonction par indice_maximum_tableau
+		<li>On constate qu'il renvoie quand même l'indice 0 alors que le tableau n'a pas de contenu</ol>
+	</p>
+	
+	
+	
+	
+	
+	<p>
+		Exercice 88 : </br>
+		Ajouter une documentation à la fonction de l’exercice précédent qui décrit ce qu’elle revoie et ses conditions d’utilisation. Appeler ensuite cette documentation dans l’interpréteur Python.</br>
+	</p>	
+	<p>
+		La première phrase, qui décrit ce que la fonction renvoie, s’appelle une postcondition.</br>
+		La seconde phrase, qui décrit les conditions d’utilisation de la fonction s’appelle une précondition. </br>
+	</p>
+	<p>
+		Correction <a href="Exercices/Documentation et débugage/exercice88.py">exercice 88</a>
+	</p>
+
+
+
+
+
+	<p>
+		Exercice 89 : </br>
+		Reprendre l’exercice 87 en ajoutant en début de fonction, juste après la documentation, l’instruction :	
+	</p>	
+	<p><em>
+		if len(t) == 0 :<br>
+		&emsp;&emsp;exit("nom_de_la_fonction : message")</em>
+	</p>
+	<p>
+		en adaptant la partie <em>nom_de_la_fonction : message.</em></br>
+		Tester la fonction.
+	</p>
+	<p>
+		Correction <a href="Exercices/Documentation et débugage/exercice89A.py">exercice 89 partie A</a></br>
+		Correction <a href="Exercices/Documentation et débugage/exercice89B.py">exercice 89 partie B</a>
+	</p>
+
+
+
+
+
+	<p>
+		Exercice 90 : </br>
+		Reprendre la fonction <em>maximum_tableau(t)</em> en utilisant cette solution.	</p>
+	<p>
+		Correction <a href="Exercices/Documentation et débugage/exercice90.py">exercice 90</a>
+	</p>
+
+
+
+
+
+	<p>
+		Exercice 91 : </br>
+		Créer un jeu de tests pour la fonction précédente.</br>
+		Exemple : <em>assert maximum_tableau([3,5,9,4,7,9,13,15,10])== 7</em>
+	</p>
+	<p>
+		Correction <a href="Exercices/Documentation et débugage/exercice91.py">exercice 91</a>
+	</p>	
+	
+	
+	
+	
+	
+	<p>
+		Exercice 92 : </br>
+		Soit la fonction suivante qui teste si un tableau est bien rangé dans l’ordre croissant :
+	</p>	
+	<p><em>
+		def est_croissant (t) :</br>
+			&emsp;&emsp;i = len(t) - 1</br>
+			&emsp;&emsp;while i >= 0 :</br>
+			&emsp;&emsp;&emsp;&emsp;if t[i] <= t[i+1] :</br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return True</br>
+			&emsp;&emsp;&emsp;&emsp;else :</br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return False</br>
+			&emsp;&emsp;&emsp;&emsp;i -= 1
+	</p></em>
+	<p><ol>
+		<li>Créer un jeu de tests pour cette fonction avec un tableau rangé dans l’ordre croissant [1, 2, 3, 4], un autre qui ne l’est pas [1, 3, 2, 4] et un tableau vide.</br> Que constate-t-on ?
+		<li>Faire tourner la fonction à la main.</br> On se rend alors compte dès le premier tour de boucle, l’indice i+1 n’existe pas.</br> On décide alors de modifier la fonction de la façon suivante au début de la boucle un affichage de la valeur de i :
+	</p>
+	<p><em>
+		def est_croissant (t) :</br>
+			&emsp;&emsp;i = len(t) - 1</br>
+			&emsp;&emsp;while i >= 0 :</br>
+			&emsp;&emsp;&emsp;&emsp;print ("nouveau tour avec i = " , i)</br>
+			&emsp;&emsp;&emsp;&emsp;if t[i-1] &lt; t[i] :</br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return True</br>
+			&emsp;&emsp;&emsp;&emsp;else :</br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return False</br>
+			&emsp;&emsp;i -= 1
+	</p></em>
+	<p>
+		Appliquer le jeu de tests précédent à cette nouvelle fonction.</br>Que constate-t-on ?
+	</p>
+		<li>On décide donc de modifier à nouveau la fonction :
+	<p><em>
+		def est_croissant (t) :</br>
+			&emsp;&emsp;i = len(t) - 1</br>
+			&emsp;&emsp;while i >= 0 :</br>
+			&emsp;&emsp;&emsp;&emsp;print ("nouveau tour avec i = " , i)</br>
+			&emsp;&emsp;&emsp;&emsp;if t[i-1] > t[i] :</br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return True</br>
+			&emsp;&emsp;&emsp;&emsp;else :</br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return False</br>
+			&emsp;&emsp;i -= 1
+	</p></em>	
+	<p>
+		Appliquer le jeu de tests précédent à cette nouvelle fonction.</br>Que constate-t-on ?
+	</p>
+		<li>Modifier à nouveau la fonction pour la corriger et le tester.
+	<p>
+		On peut aussi écrire un programme effectuant une série de tests.</ol>
+	</p>		
+	<p>Correction :
+		<ol>
+		<li>On constate une erreur dans les tests
+		<li>On constate toujours une erreur pour le second test
+		<li>On constate une erreur pour le premier test
+		<li><a href="Exercices/Documentation et débugage/exercice92.py">exercice 92 question 4</a> :</ol>
+	</p>
+
+
+
+
+
+
+	<p>
+		Exercice 93 : </br>
+		<ol>
+		<li>Ecrire une fonction <em>tableau_croissant(n)</em> qui crée un tableau d’éléments aléatoires dont la taille <em>n</em> est donnée en paramètre et dans lequel les éléments sont triés dans l’ordre croissant.
+	</p>
+	<p>
+		<li>Vérifier qu’il fonctionne bien en utilisant la boucle suivante :</br>
+		<em>
+		for n in range(2, 20) : </br>
+			&emsp;&emsp;for i in range(10) :</br>
+			&emsp;&emsp;&emsp;&emsp;t = tableau-croissant(n)</br>
+			&emsp;&emsp;&emsp;&emsp;assert est_croissant(t)</br>
+		</em>	
+	</p></ol>
+	<p>
+		Correction <a href="Exercices/Documentation et débugage/exercice93.py">exercice 93</a> 
+	</p>
+	
+	
+	
+	
+	
+<!--	<p>
+		Exercice 94 : </br>
+		Considérons la fonction suivante, qui calcule le quotient et le reste de la division euclidienne de a par b par la méthode des soustractions successives : </br>
+	</p>
+	<p><em>
+		def division_eulidienne(a, b):</br>
+			&emsp;&emsp;q = o</br>
+			&emsp;&emsp;r = a</br>
+			&emsp;&emsp;while r >= b :</br>
+			&emsp;&emsp;&emsp;&emsp;q += 1</br>
+			&emsp;&emsp;&emsp;&emsp;r -= b</br>
+			&emsp;&emsp;return q, r</br>
+	</p></em>	
+	<p><ol>
+		<li>Donner l’égalité vérifiée par a, b, q et r ainsi que les propriétés que doivent vérifier ces variables pour correspondre à la définition de la division euclidienne.
+		<li>Lesquelles parmi ces dernières doivent rester inchangées à chaque itération de la boucle et peuvent donc être considérées comme des invariants de boucle ?
+		<li>A l’aide d’assertions placées dans la boucle, vérifier que c’est bien le cas avec la fonction précédente.  
+	</p>
+	<p><ol>
+		<li>
+		<li>
+		<li>
+	</p></ol>
+	
+
+
+
+	
+	
+	
+		
+		
+	
+
+
+Exercice 95
+Donner un invariant de boucle pour la fonction suivante qui calcule x à la puissance n :
+
+def puissance(x, n):
+	r = 1
+for i in range(n) :
+		r = r * x
+	return r
+
+Exercice 96
+Créer un jeu de tests pour la fonction puissance(x,n).
+
+Exercice 97
+Pour la fonction suivante, lui donner un meilleur nom, une chaîne de documentation, un invariant de boucle et des tests.
+
+def f(t):
+	s = 0
+	for i in range(len(t)) :
+		s += t[i]
+	return s
+
+Exercice 98
+On prétend que la fonction suivante teste l’appartenance de la valeur v au tableau t : 
+
+def appartient(v, t):
+	i = 0
+	while i < len(t) – 1 and t[i] != v :
+		i = i + 1
+	return i < len(t)
+
+Donner des tests pour cette fonction, et en particulier un test montrant qu’elle est incorrecte.
+
+ 
+Exercice 99
+On prétend que la fonction suivante teste l’appartenance de la valeur v au tableau t : 
+
+def appartient(v, t):
+	for i in range(len(t)) : 
+		if t[i] == v :
+			trouve = True
+		else :
+			trouve = False
+	return trouve
+
+Donner des tests pour cette fonction, et en particulier un test montrant qu’elle est incorrecte.-->
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<a href = "main.html"> Retour à la page principale</a></br>
+	<a href = "page_tableaux_et_listes.html"> Page précédente</a></br>
+	<a href = "page_ensembles.html"> Page suivante</a>	
+	
+	
+</body>
