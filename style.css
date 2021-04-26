@@ -14,24 +14,24 @@ html
 {
 	border-left: 175px white solid;
 	border-right: 175px white solid;
-	border-image:linear-gradient(#e6e6fa, #fff0f5, #ffe4e1) 30; 
-	background-color: silver;
+	border-image:linear-gradient(#eddff9, #fff0f5, #ffe4e1) 30; 
+	background-color: white;
 }
 
 h2{
-	color: purple;
+	color: rgb(80,11,11);
+	text-decoration: underline;
 	font-style: italic ;
 	font-size: 50px;
 }
 
 h3{
-	color: blue;
+	color: rgb(171,70,125);
 	font-size: 30px;
 }
 
-
 div.cours {
-	color: teal;
+	color: maroon;
 	font-weight: bold;
 	background-color: pink;
 	border-color: olive;
