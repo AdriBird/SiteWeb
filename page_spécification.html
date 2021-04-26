@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css" />
-    <title>Projet NSI: Site Web - Spécifications</title>
+    <title>Projet NSI: Site Web</title>
 </head>
 <body>
 	<h1>Spécification et mise au point</h1>
 	<p>Voici les exercices du chapitre spécification et mise au point et leur correction :</p>
 	
+	<h3>Exercice 87 : </h3>	
 	<p>
-		Exercice 87 : </br>
 		Soit le programme suivant :</br>
 	</p>	
 	<p><em>
@@ -38,8 +38,8 @@
 	
 	
 	
+	<h3>Exercice 88 : </h3>	
 	<p>
-		Exercice 88 : </br>
 		Ajouter une documentation à la fonction de l’exercice précédent qui décrit ce qu’elle revoie et ses conditions d’utilisation. Appeler ensuite cette documentation dans l’interpréteur Python.</br>
 	</p>	
 	<p>
@@ -53,9 +53,8 @@
 
 
 
-
+	<h3>Exercice 89 : </h3>
 	<p>
-		Exercice 89 : </br>
 		Reprendre l’exercice 87 en ajoutant en début de fonction, juste après la documentation, l’instruction :	
 	</p>	
 	<p><em>
@@ -75,8 +74,8 @@
 
 
 
+	<h3>Exercice 90 : </h3>
 	<p>
-		Exercice 90 : </br>
 		Reprendre la fonction <em>maximum_tableau(t)</em> en utilisant cette solution.	</p>
 	<p>
 		Correction <a href="Exercices/Documentation et débugage/exercice90.py">exercice 90</a>
@@ -86,8 +85,8 @@
 
 
 
+	<h3>Exercice 91 : </h3>
 	<p>
-		Exercice 91 : </br>
 		Créer un jeu de tests pour la fonction précédente.</br>
 		Exemple : <em>assert maximum_tableau([3,5,9,4,7,9,13,15,10])== 7</em>
 	</p>
@@ -98,9 +97,8 @@
 	
 	
 	
-	
+	<h3>Exercice 92 : </h3>
 	<p>
-		Exercice 92 : </br>
 		Soit la fonction suivante qui teste si un tableau est bien rangé dans l’ordre croissant :
 	</p>	
 	<p><em>
@@ -162,9 +160,8 @@
 
 
 
-
+	<h3>Exercice 93 : </h3>
 	<p>
-		Exercice 93 : </br>
 		<ol>
 		<li>Ecrire une fonction <em>tableau_croissant(n)</em> qui crée un tableau d’éléments aléatoires dont la taille <em>n</em> est donnée en paramètre et dans lequel les éléments sont triés dans l’ordre croissant.
 	</p>
@@ -181,107 +178,10 @@
 		Correction <a href="Exercices/Documentation et débugage/exercice93.py">exercice 93</a> 
 	</p>
 	
-	
-	
-	
-	
-<!--	<p>
-		Exercice 94 : </br>
-		Considérons la fonction suivante, qui calcule le quotient et le reste de la division euclidienne de a par b par la méthode des soustractions successives : </br>
-	</p>
-	<p><em>
-		def division_eulidienne(a, b):</br>
-			&emsp;&emsp;q = o</br>
-			&emsp;&emsp;r = a</br>
-			&emsp;&emsp;while r >= b :</br>
-			&emsp;&emsp;&emsp;&emsp;q += 1</br>
-			&emsp;&emsp;&emsp;&emsp;r -= b</br>
-			&emsp;&emsp;return q, r</br>
-	</p></em>	
-	<p><ol>
-		<li>Donner l’égalité vérifiée par a, b, q et r ainsi que les propriétés que doivent vérifier ces variables pour correspondre à la définition de la division euclidienne.
-		<li>Lesquelles parmi ces dernières doivent rester inchangées à chaque itération de la boucle et peuvent donc être considérées comme des invariants de boucle ?
-		<li>A l’aide d’assertions placées dans la boucle, vérifier que c’est bien le cas avec la fonction précédente.  
-	</p>
-	<p><ol>
-		<li>
-		<li>
-		<li>
-	</p></ol>
-	
-
-
-
-	
-	
-	
-		
-		
-	
-
-
-Exercice 95
-Donner un invariant de boucle pour la fonction suivante qui calcule x à la puissance n :
-
-def puissance(x, n):
-	r = 1
-for i in range(n) :
-		r = r * x
-	return r
-
-Exercice 96
-Créer un jeu de tests pour la fonction puissance(x,n).
-
-Exercice 97
-Pour la fonction suivante, lui donner un meilleur nom, une chaîne de documentation, un invariant de boucle et des tests.
-
-def f(t):
-	s = 0
-	for i in range(len(t)) :
-		s += t[i]
-	return s
-
-Exercice 98
-On prétend que la fonction suivante teste l’appartenance de la valeur v au tableau t : 
-
-def appartient(v, t):
-	i = 0
-	while i < len(t) – 1 and t[i] != v :
-		i = i + 1
-	return i < len(t)
-
-Donner des tests pour cette fonction, et en particulier un test montrant qu’elle est incorrecte.
-
- 
-Exercice 99
-On prétend que la fonction suivante teste l’appartenance de la valeur v au tableau t : 
-
-def appartient(v, t):
-	for i in range(len(t)) : 
-		if t[i] == v :
-			trouve = True
-		else :
-			trouve = False
-	return trouve
-
-Donner des tests pour cette fonction, et en particulier un test montrant qu’elle est incorrecte.-->
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<a href = "main.html"> Retour à la page principale</a></br>
-	<a href = "page_tableaux_et_listes.html"> Page précédente</a></br>
-	<a href = "page_ensembles.html"> Page suivante</a>	
-	
+	<div class = "pages">
+		<a href = "page_tableaux_et_listes.html"> Page précédente</a>
+		<a href = "page_ensembles.html"> Page suivante</a>	</br>
+		<a href = "main.html"> Sommaire</a>
+	</div>
 	
 </body>
