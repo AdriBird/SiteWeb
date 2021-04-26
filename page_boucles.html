@@ -2,41 +2,264 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Projet NSI: Site Web</title>
+        <link rel="stylesheet" href="style.css" />
+        <title>Projet NSI: Site Web - Boucles</title>
     </head>
     <body>
-    Voici la correction des exercices en rapport avec le chapitre sur les boucles.
-    <br><ul><li>Boucles simples: </li></ul>
-    <ol>
-        <li><a href="Exercices/Boucles/exercice32.py">exercice 32</a></li>
-        <li><a href="Exercices/Boucles/exercice33.py">exercice 33</a></li>
-        <li><a href="Exercices/Boucles/exercice35.py">exercice 35</a></li>
-        <li><a href="Exercices/Boucles/exercice36.py">exercice 36</a></li>
-        <li><a href="Exercices/Boucles/exercice37.py">exercice 37</a></li>
-        <li><a href="Exercices/Boucles/exercice38.py">exercice 38</a></li>
-        <li><a href="Exercices/Boucles/exercice39.py">exercice 39</a></li>
-        <li><a href="Exercices/Boucles/exercice40.py">exercice 40</a></li>
-        <li><a href="Exercices/Boucles/exercice41.py">exercice 41</a></li>
+    <h1>Boucles</h1>
+    <h2>Boucles simple</h2>
+    <div class="cours">
+        <p>La notion de boucle est fondamentale en informatique. Une boucle permet d'exécuter plusieurs fois des instructions qui ne sont présentes qu'une seule fois dans le code.</p>
+        <p>La structure de la boucle conditionnelle est la suivante :</p>
+        <img src="page_boucles/cours1.png" alt="image cours">
+        <p>Tant que l'expression s'évalue à <em>True</em>, les instructions à l'intérieur du bloc (partie indentée) seront exécutées.</p>
+        <p>La boucle non conditionnelle permet de répéter <em>n</em> fois, <em>n</em> étant connu, une instruction ou un bloc d’instructions. Sa syntaxe est la suivante :</p>
+        <img src="page_boucles/cours2.png" alt="image cours2">
+        <p>Ce code peut être remplacé par le code :</p>
+        <img src="page_boucles/cours3.png" alt="image cours3">
+    </div>
 
-    </ol>
-    <br><ul><li>Boucles avancées: </li></ul>
-    <ol>
-        <li><a href="Exercices/Boucles/Boucles_Avancées/exercice63.py">exercice 63</a></li>
-        <li><a href="Exercices/Boucles/Boucles_Avancées/exercice64.py">exercice 64</a></li>
-        <li><a href="Exercices/Boucles/Boucles_Avancées/exercice65.py">exercice 65</a></li>
-        <li><a href="Exercices/Boucles/Boucles_Avancées/exercice66.py">exercice 66</a></li>
-        <li><a href="Exercices/Boucles/Boucles_Avancées/exercice67.py">exercice 67</a></li>
-        <li><a href="Exercices/Boucles/Boucles_Avancées/exercice68.py">exercice 68</a></li>
-        <li><a href="Exercices/Boucles/Boucles_Avancées/exerciceNICE.py">exercice 69</a></li>
-        <li><a href="Exercices/Boucles/Boucles_Avancées/exercice70.py">exercice 70</a></li>
-    </ol>
-    <br><ul><li>Exercices écrits:</li></ul>
-    <ol>
-        <li><a href="Exercices/Boucles/Boucles_Avancées/exercices écrits/exercice71.py">exercice 71</a></li>
-        <li><a href="Exercices/Boucles/Boucles_Avancées/exercices écrits/exercice72.py">exercice 71</a></li>
-        <li><a href="Exercices/Boucles/Boucles_Avancées/exercices écrits/exercice73.py">exercice 71</a></li>
-        <li><a href="Exercices/Boucles/Boucles_Avancées/exercices écrits/matplottest.py">test matplot</a></li>
-    </ol>
-    <br><br><br><br>Retour au <a href="main.html">--> sommaire <--</a>
+    <h3>Exercice 32</h3>
+    <p>Voici un script :</p>
+    <img src="page_boucles/exercice32corrigé.png" alt="exercice32corrigé">
+    <p>Quelle est la valeur finale de <em>x</em> ?</p>
+    <div class = "correction">
+        <a href="Exercices/Boucles/exercice32.py">Correction de l'exercice 32</a>
+    </div>
+
+    <h3>Exercice 33</h3>
+    <p>Voici un script :</p>
+    <img src="page_boucles/exercice33cor.png" alt="exercice33corrigé">
+    <p>Quelle est la valeur finale de x ?</p>
+    <div class="correction">
+        <a href="Exercices/Boucles/exercice33.py">Correction de l'exercice 33</a>
+    </div>
+
+    <h3>Exercice 34</h3>
+    <p>Soit le programme suivant :</p>
+    <img src="page_boucles/exercice34cor.png" alt="exercice34corrigé">
+    <p>Quel est le résultat attendu après l'exécution de ce programme ? Vérifiez votre réponse en testant le programme.</p>
+
+    <h3>Exercice 35</h3>
+    <p>Créez "un générateur automatique de punition".</p>
+    <p>Écrire une fonction qui prendra 2 paramètres : une chaîne de caractère et un nombre entier</p>
+    <p>Par exemple :</p>
+    <p>Si on passe comme paramètres à notre fonction : "Je ne dois pas discuter en classe" et 3, la fonction devra permettre d'afficher :</p>
+    <p>Je ne dois pas discuter en classe</p>
+    <p>Je ne dois pas discuter en classe</p>
+    <p>Je ne dois pas discuter en classe</p>
+    <div class = "correction">
+        <a href="Exercices/Boucles/exercice35.py">Correction de l'exercice 35</a>
+    </div>
+
+    <h3>Exercice 36</h3>
+    <p>Écrire une fonction permettant d'afficher une table de multiplication. Cette fonction devra prendre en paramètre la table désirée.</p>
+    <div class = "correction">
+        <a href="Exercices/Boucles/exercice36.py">Correction de l'exercice 36</a>
+    </div>
+
+    <h3>Exercice 37</h3>
+    <p>Ecrire une fonction qui prend en argument un entier positif et renvoie son nombre de chiffres.</p>
+    <div class = "correction">
+        <a href="Exercices/Boucles/exercice37.py">Correction de l'exercice 37</a>
+    </div>
+
+    <h3>Exercice 38</h3>
+    <p>Ecrire une fonction qui prend en argument un entier naturel en base 10 et qui renvoie l’écriture de cet entier en base 2.</p>
+    <div class = "correction">
+        <a href="Exercices/Boucles/exercice38.py">Correction de l'exercice 38</a>
+    </div>
+
+    <h3>Exercice 39</h3>
+    <p>Ecrire une fonction qui prend en argument un nombre écrit en base 2 et qui renvoie l’écriture de cet entier en base 10.</p>
+
+    <br><div class = "cours">
+        <p>Python propose un certain nombre d’instructions primitives comme <em>print</em> et <em>input</em> .</p>
+        <p>Le langage contient également de bibliothèques qui apportent des collections d’instructions plus spécialisées qui permettent d’effectuer de nouvelles taches.</p>
+        <p>Par exemple, il existe une bibliothèque <em>random</em> donnant accès à différentes instructions produisant des nombres aléatoires. Elle offre en particulier
+            une instruction <em>randint</em> pouvant être utilisée sous la forme <em>random.randint(1,6)</em> pour tir au hasard un nombre entier entre 1 et 6 inclus ou encore
+            une instruction <em>random</em> pouvant être utilisée sous la forme <em>random.random()</em> pour tirer au hasard un nombre décimal entre 0 inclus et 1 exclu.</p>
+        <p>L’utilisation de telles instructions nécessite la déclaration préalable, faite en début de programme : <em>import random</em></p>
+        <p>On peut aussi spécifiquement charger une ou plusieurs instructions de la façon suivante : <em>from random import randint</em></p>
+        <p>On appellera alors <em>randint</em> de la façon suivante : <em>randint(1,6)</em></p>
+    </div>
+
+    <h3>Exercice 40</h3>
+    <p>Créer un programme qui permette de jouer au jeu « devine le nombre ».</p>
+    <p> L’ordinateur choisit un nombre mystère, puis l’utilisateur propose à chaque tour un nombre jusqu’à ce qu’il trouve le nombre mystère.
+        L’ordinateur lui répond « C’est plus », « C’est moins » ou « Gagné ».</p>
+    <div class="cours">
+        <p>L’instruction break est une instruction spéciale qui ne peut être écrite que dans une boucle. Elle provoque l’arrêt immédiat de la boucle.</p>
+    </div>
+    <div class="correction">
+        <a href="Exercices/Boucles/exercice40.py">Correction de l'exercice 40</a>
+    </div>
+
+    <h3>Exercice 41</h3>
+    <p>Ecrire un programme qui demande à l’utilisateur d’entrer un nombre positif jusqu’à ce qu’il en entre un.</p>
+    <div class="cours">
+        <p>Attention : le compteur d’une boucle for existe toujours après l’exécution de la boucle en Python.</p>
+        <p>Ce n’est pas vrai dans tous les langages.</p>
+        <p>On recommande de ne plus utiliser cette variable après la boucle, sauf comme compteur d’une autre boucle.</p>
+    </div>
+    <div class="correction">
+        <a href="Exercices/Boucles/exercice41.py">Correction de l'exercice 41</a>
+    </div>
+
+    <div class="cours">
+        <p>Terminaison et méthode du variant dans une boucle <em>while</em>:</p>
+        <p>L’arrêt des itérations d’une boucle <em>while</em> étant conditionné à un échec, elles peuvent se poursuivre indéfiniment si la condition est toujours vérifiée.</p>
+        <p>On parle alors de <em>divergence</em>, de <em>non terminaison</em>, d’un <em>programme qui boucle</em> ou encore d’un <em>programme qui part en boucle infinie</em>.</p>
+        <p>Cela peut être obtenu de manière volontaire ou être causé par des erreurs de programmation.</p>
+        <p>Pour éviter ce dernier cas, il devient utile de réfléchir à la terminaison du programme en s’assurant que les conditions menant à l’arrêt de la boucle
+            finiront par être vérifiées.</p>
+    </div>
+
+    <h3>Exercice 42</h3>
+    <p>Soit le programme suivant :</p>
+    <img src="page_boucles/exercice42cor.png" alt="exercice42cor">
+    <p>Justifier que ce programme termine.</p>
+    <div class="cours">
+        <p>La technique de raisonnement utilisée au-dessus s’appelle la technique du variant.</p>
+        <p>Elle consiste à trouver parmi les éléments du programme une quantité qui est entière et positive et qui décroit strictement à
+            chaque tour de boucle, qu’on appelle le variant de boucle.</p>
+    </div>
+
+    <h3>Exercice 43</h3>
+    <p>On prétend que chacun des deux programmes suivants, après avoir demandé deux nombres entiers positifs <em>a</em> et <em>b</em> à l’utilisateur,
+        effectue la multiplication de <em>a</em> par <em>b</em>.</p>
+    <img src="page_boucles/exercice43cor1.png" alt="exercice43cor1">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="page_boucles/exercice43cor2.png" alt="exercice43cor2">
+    <p>Ces programmes terminent-ils ? Identifier pour chacun un variant de boucle.</p>
+
+    <h3>Exercice 44</h3>
+    <p>On prétend que chacun des deux programmes suivants calcule le nombre de chiffres d’un nombre positif saisi par l’utilisateur.</p>
+    <img src="page_boucles/exercice44cor1.png" alt="exercice44cor1">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="page_boucles/exercice44cor2.png" alt="exercice44cor2">
+    <p>Justifier qu’ils terminent avec la technique du variant.</p>
+    <p>Que se passe-t-il si on remplace a > 0 par a != 0 dans le premier programme ?</p>
+    <p>Et si on remplace <em>k < a + 1</em> par <em>k != a + 1</em> dans le deuxième ?</p>
+
+    <h2>Boucles avancées</h2>
+    <h3>Exercice 63</h3>
+    <p>Soit le programme suivant :</p>
+    <img src="page_boucles/exercice63cor.png" alt="exercice63cor">
+    <p>Quel est le résultat attendu après l'exécution de ce programme ? </p>
+    <p>Vérifiez votre réponse en testant le programme</p>
+    <div class="correction">
+          <a href="Exercices/Boucles/Boucles_Avancées/exercice63.py">Correction de l'exercice 63</a>
+    </div>
+
+    <h3>Exercice64</h3>
+    <p>Ecrire une fonction  <em>element_commun</em> qui prend en argument deux tableaux <em>t1</em> et <em>t2</em> et qui renvoie <em>True</em> si <em>t1</em> et <em>t2</em> ont un élément commun et <em>False</em> sinon.</p>
+    <div class="correction">
+        <a href="Exercices/Boucles/Boucles_Avancées/exercice64.py">Correction de l'exercice 64</a>
+    </div>
+
+    <h3>Exercice65</h3>
+    <p>Ecrire une fonction  <em>doublon</em>  qui prend en argument un tableau <em>t</em> et qui renvoie <em>True</em> si un élément est présent plus d’une fois dans <em>t</em>.</p>
+    <div class="correction">
+        <a href="Exercices/Boucles/Boucles_Avancées/exercice65.py">Correction de l'exercice 65</a>
+    </div>
+
+    <h3>Exercice 66</h3>
+    <p>Ecrire un programme qui affiche des tables de multiplication sous la forme :</p>
+    <img src="page_boucles/exercice66cor.png" alt="exercice66cor">
+    <div class="correction">
+        <a href="Exercices/Boucles/Boucles_Avancées/exercice66.py">Correction de l'exercice 66</a>
+    </div>
+
+    <h3>Exercice 67</h3>
+    <p>Ecrire un programme qui demande deux entiers <em>h</em> et <em>l</em> à l’utilisateur et affiche des symboles <em>#</em> disposés en rectangle de hauteur <em>h</em> et de largeur <em>l</em>.</p>
+    <div class="correction">
+        <a href="Exercices/Boucles/Boucles_Avancées/exercice67.py">Correction de l'exercice 67</a>
+    </div>
+
+    <h3>Exercice 68</h3>
+    <p>Ecrire des programmes qui demandent un entier <em>n</em> à l’utilisateur et affichent chacun l’une des figures suivantes (dans un carré de côté <em>n</em>) :</p>
+    <img src="page_boucles/exercice68cor.png" alt="exercice68cor">
+    <div class="correction">
+        <a href="Exercices/Boucles/Boucles_Avancées/exercice68.py">Correction de l'exercice 68</a>
+    </div>
+
+    <h3>Exercice 69</h3>
+    <p>a)   En utilisant trois boucles imbriquées, afficher tous les triplets d’entiers <em>1≤a≤b≤c≤100</em> tels que  <em>a^2+b^2=c^2</em> (dits triplets pythagoriciens).</p>
+    <p>b)	Modifier le programme pour qu’il renvoie le nombre de triplets.</p>
+    <div class="correction">
+        <a href="Exercices/Boucles/Boucles_Avancées/exerciceNICE.py">Correction de l'exercice 69</a>
+    </div>
+
+    <h3>Exercice 70</h3>
+    <p>Pour calculer les nombres premiers plus petits qu’une certaine limite <em>N</em> qu’on se fixe, il existe un algorithme appelé crible d’Eratosthène.</p>
+    <p>On se donne un tableau <em>t</em> de <em>N</em> booléens, initialement tous égaux à <em>True</em>, sauf <em>t[0]</em> et <em>t[1]</em> qui valent <em>False</em>.</p>
+    <p>Puis on parcourt ce tableau dans le sens des indices croissants.</p>
+    <p>Pour chaque indice <em>i</em>, il y a deux cas de figure :</p>
+    <p>
+        •	Si <em>t[i]</em> vaut <em>False</em>, alors le nombre <em>i</em> n’est pas premier et il n’y a rien à faire.</p><p>
+        •	Si <em>t[i]</em> vaut <em>True</em>, alors le nombre <em>i</em> est premier et on met à <em>False</em> toutes les cases du tableau dont l’indice est un multiple de <em>i</em>, c’est-à-dire <em>2 * i, 3 * i</em>, …
+    </p>
+    <p>Ecrire un programme qui réalise cet algorithme et affiche tous les nombres premiers plus petits que 100. On doit en trouver 25.</p>
+    <div class="correction">
+        <a href="Exercices/Boucles/Boucles_Avancées/exercice70.py">Correction de l'exercice 70</a>
+    </div>
+
+    <h2>Exercices écrits</h2>
+    <h3>Exercice 71</h3>
+    <img src="page_boucles/exercice71cor.png" alt="exercice71cor">
+    <p>a)	Pour chacun des programmes précédents, donner le nombre de lignes affichées.</p>
+    <p>b)	Par combien ce nombre de lignes est multiplié lorsqu’on multiplie n par 10 ?</p>
+    <div class="correction">
+        <a href="Exercices/Boucles/Boucles_Avancées/exercices écrits/exercice71.py">Correction de l'exercice 71</a>
+    </div>
+
+    <div class="cours">
+        <p>A retenir : </p>
+        <p>En informatique, la question de la performance des programmes est centrale.</p>
+        <p>D’une manière générale, le traitement d’un volume de données requiert un temps d’exécution lié  à ce volume de données.</p>
+        <p>On s’attache rarement à la détermination exacte de ce temps, une estimation suffit pour se convaincre de l’efficacité du programme.</p>
+        <p>Par exemple, si en doublant un volume n de données, un programme renvoie une réponse avec un temps d’exécution multiplié par deux et
+            un autre programme renvoie une réponse au même problème avec un temps d’exécution multiplié par quatre, on peut raisonnablement penser
+            que le premier programme est plus performant.</p>
+        <p>On dit que sa <em>complexité temporelle</em> est meilleure.</p>
+        <p>Il est ainsi possible de cataloguer les programmes qui résolvent un même problème en termes de complexité temporelle, c’est-à-dire une estimation
+            de la performance en fonction du volume de données à traiter.</p>
+        <p>On peut également s’intéresser à l’espace mémoire occupé au cours de l’exécution d’un programme que l’on appelle <em>complexité spatiale</em>.
+            Plus cette complexité est grande, plus le programme a besoin de zone mémoires pour stocker les données.</p>
+        <p>Les instructions d’un programme s’exécutent à très grande vitesse, si bien que le résultat donne parfois l’impression d’être obtenu instantanément.
+            On ne fait pas toujours de différences entre un programme qui s’exécute en 0,01 millisecondes et un autre en 10 millisecondes.</p>
+        <p>Cependant, si le nombre d’instructions exécuté est grand, le temps nécessaire à l’exécution d’un programme pourra devenir conséquent.</p>
+        <p>Pour connaître avec plus de précision le temps d’exécution d’un programme, on peut utiliser dans le langage Python les instructions suivantes :</p>
+        <img src="page_boucles/cours4.png" alt="cours4">
+        <p>Le temps sera donné en millisecondes.</p>
+    </div>
+
+    <h3>Exercice 72</h3>
+    <p>Pour chacun des programmes suivants, mesurer le temps d’exécution du programme suivant avec différentes valeurs de <em>n</em> et tracer la courbe du temps en fonction de <em>n</em>.</p>
+    <img src="page_boucles/exercice72cor.png" alt="exercice72cor">
+    <p>Recommencer l’expérience avec d’autres opérations arithmétiques dans le corps de la boucle, puis avec plus de boucles, imbriquées ou non.</p>
+    <div class="correction">
+        <a href="Exercices/Boucles/Boucles_Avancées/exercices écrits/exercice72.py">Correction de l'exercice 72</a>
+    </div>
+
+    <h3>Exercice 73</h3>
+    <p>Voici deux fonctions qui prennent en paramètre deux tableaux de nombres et qui renvoient un nombre.</p>
+    <p>Expliquer pourquoi ces deux fonctions, appliquées aux mêmes paramètres, produisent le même résultat.</p>
+    <p>Quelle est la différence entre les deux ?</p>
+    <img src="page_boucles/exercice73cor1.png" alt="exercice73cor1">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="page_boucles/exercice73cor2.png" alt="exercice73cor2">
+    <div class="correction">
+        <a href="Exercices/Boucles/Boucles_Avancées/exercices écrits/exercice73.py">Correction de l'exercice 73</a>
+    </div>
+
+
+    
+    <div class="pages">
+        <a href="page_ou_et.html">Page précédante</a>
+        <a href="page_tableaux_listes.html">Page suivante</a><br>
+        <a href="main.html">Sommaire</a>
+    </div>
     </body>
 </html>
