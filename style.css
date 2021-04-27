@@ -30,6 +30,12 @@ h3{
 	font-size: 30px;
 }
 
+div.li {
+    font-weight: bold;
+    text-align:center;
+    font-size:35px;
+}
+
 div.cours {
 	color: maroon;
 	font-weight: bold;
