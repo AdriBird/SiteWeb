@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" />
+	<script src="script.js" defer></script>
+    <title>Projet NSI: SIte Web</title>
+</head>
+<body>
+	<h1>Dictionnaires</h1>
+	<h2>Les bases</h2>
+	
+		<div class = "cours">
+			<p>Un dictionnaire est un ensemble qui associe des <em>valeurs</em> à des <em>clés</em>. </p>
+			<p> Ainsi le dictionnaire <em>d = {"nom" : "Léonard", "jour" : 15, "mois" : 4, "année" : 1452}</em> contient quatre clés : <em>"nom"</em>, <em>"jour"</em>, <em>"mois"</em> et <em>"année"</em>, auxquelles sont associées quatre valeurs. <br/>
+			Pour accéder à la valeur associée à la clé <em>clé</em>, on utilise l’instruction <em>d[clé]</em>. </p>
+			<p> On peut également construire un dictionnaire à partir du dictionnaire vide <em>d = {}</em> et en y ajoutant des entrées avec des affectations de la forme <em>d[clé] = valeur</em>. <br/>
+			Si la clé existe déjà, on en modifiera la valeur, sinon, une nouvelle entrée sera créée. </p>
+			<p> L’ordre d’insertion n’est pas important et l’affichage se fait dans un ordre arbitraire. </p>
+			<p> On peut supprimer une entrée du dictionnaire avec l’instruction <em>del</em>. </p>
+			<p> L’instruction <em>clé in d</em> renvoie vrai si le dictionnaire <em>d</em> contient la clé <em>clé</em> et faux sinon. </p>
+			<p> Enfin l’instruction <em>len</em> permet d’obtenir la taille du dictionnaire. </p>
+		</div>
+	
+		<h3>Exercice 105</h3>
+			<p>Créer un dictionnaire dont les clés seront des prénoms de personnes.<br/>
+			Utiliser chacune des notions présentées ci-dessus pour vous les approprier.</p>
+		<br/><div class = "correction">
+			<a href="Exercices/Dictionnaires/exercice105.py"> Correction de l'exercice 105 </a>
+		</div> <br/><br/>
+	
+	<h2>Parcours d'un dictionnaire</h2>
+	
+		<div class = "cours">
+			<p>On peut parcourir les clés d’un dictionnaire <em>d</em> avec l’instruction suivante : <em>for clé in d</em>. </br>
+			On peut obtenir un tableau contenant toutes les clés de <em>d</em> avec : <em>list(d.keys())</em> ou <em>list(d)</em>. </br>
+			On peut obtenir un tableau contenant toutes les valeurs de <em>d</em> avec : <em>list(d.values())</em>. Ce tableau contiendra autant de fois chaque valeur qu’elles apparaissent dans le dictionnaire et aura donc la même taille que ce dernier.</p>
+		</div>
+	
+		<h3>Exercice 106</h3>
+			<p>Utiliser chacune des notions présentées ci-dessus sur le dictionnaire de l’exercice précédent pour vous les approprier.</p>
+		<br/><div class = "correction">
+			<a href="Exercices/Dictionnaires/exercice106.py"> Correction de l'exercice 106 </a> 
+		</div> <br/><br/>
+	
+		<div class = "cours">
+			<p>On peut également construire un dictionnaire par compréhension.</p>
+		</div>
+	
+		<h3>Exercice 107</h3>
+			<p>Construire par compréhension un dictionnaire qui contient comme clés les dix premiers entiers et comme valeurs associées les cubes de ces nombres.</p>
+		<br/><div class = "correction">
+			<a href="Exercices/Dictionnaires/exercice107.py"> Correction de l'exercice 107 </a> 
+		</div> <br/><br/>
+		
+		<h3>Exercice 108</h3>
+			<p>Créer une fonction <em>occurences</em> qui prend en paramètre un tableau et renvoie un dictionnaire dont les clés sont les valeurs du tableau et les valeurs le nombre de fois qu’apparaissent ces valeurs dans le tableau. <br/>
+			On commencera par créer un dictionnaire vide, puis on parcourra les éléments du tableau en testant pour chacun d’entre eux s’il est déjà présent sous la forme d’une clé dans le dictionnaire. Si oui, on augmente la valeur correspondant à cette clé de 1, sinon, on crée une nouvelle entrée dans le dictionnaire avec pour valeur 1. </p>
+		<br/><div class = "correction">
+			<a href="Exercices/Dictionnaires/exercice108.py"> Correction de l'exercice 108 </a> 
+		</div> <br/><br/>
+		
+		<h3>Exercice 109</h3>
+			<p>Ecrire une fonction qui prend en paramètre un dictionnaire (dont les clés sont des prénoms et les valeurs les mois de naissance de ces individus) et qui renvoie un dictionnaire contenant chacun des mois présents comme clés et le nombre d’individus nés ce mois comme valeur.</p>
+		<br/><div class = "correction">
+			<a href="Exercices/Dictionnaires/exercice109.py"> Correction de l'exercice 109 </a> 
+		</div> <br/><br/>
+		
+		<h3>Exercice 110</h3>
+			<p>Créer une fonction <em>compare_tableau(t,u)</em> qui prend en paramètre deux tableaux et détermine si les deux tableaux contiennent les mêmes éléments avec pour chacun le même nombre d’occurrences. <br/>
+			On utilisera la fonction <em>occurences</em> de l’exercice 108.</p>
+		<br/><div class = "correction">
+			<a href="Exercices/Dictionnaires/exercice110.py"> Correction de l'exercice 110</a> 
+		</div> <br/><br/>
+		
+		<div class="li">
+		<input class="favorite style" type="button" onclick=window.location.href='page_ensembles.html'; value="Page précédente" />
+		<input class="favorite style" type="button" onclick=window.location.href='main.html'; value="Sommaire" />
+		</div>
+		
+	</body>
+</html>
