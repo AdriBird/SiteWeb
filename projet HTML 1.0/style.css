@@ -79,7 +79,7 @@ a {
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 25px;
-    background-color: rgba(220, 0, 0, 1);
+    background-color: rgba(151, 0, 255, 0.5);
     background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
@@ -89,19 +89,13 @@ a {
 }
 
 .styled:hover {
-    background-color: rgba(255, 0, 0, 1);
+    background-color: rgba(151, 0, 255, 0.7);
 }
 
 .styled:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
-
-
-
-
-
-
 
 
 
@@ -118,7 +112,7 @@ a {
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 25px;
-    background-color: rgba(220, 0, 0, 1);
+    background-color: rgba(255, 0, 0, 0.7);
     background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
@@ -135,6 +129,23 @@ a {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
+
+
+
+
+
+
+#scrollUp:hidden{
+	position: fixed;
+	bottom : 50px;
+	right: 200px;
+	opacity: 0.7;
+}
+
+
+
+
+
 
 
 
