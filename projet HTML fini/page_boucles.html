@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        <title>Projet NSI: Site Web - Boucles</title>
+    </head>
+<body>
+	
+	<div class="barre">
+		<input class="banniere" type="button" onclick=window.location.href='https://www.python.org/downloads/'; value="Python" />
+		<input class="banniere" type="button" onclick=window.location.href='https://notepad-plus-plus.org/downloads/'; value="Notepad ++" />
+		<input class="banniere" type="button" onclick=window.location.href='https://www.jetbrains.com/fr-fr/pycharm/'; value="PyCharm" />
+		<input class="banniere" type="button" style="float:right" onclick=window.location.href='https://github.com/'; value="GitHub" /></br>
+	</div>
+	
+	<h1>Boucles</h1>
+    <h2>Boucles simple</h2>
+    <div class="cours">
+        <p>La notion de boucle est fondamentale en informatique. Une boucle permet d'exécuter plusieurs fois des instructions qui ne sont présentes qu'une seule fois dans le code.</p>
+        <p>La structure de la boucle conditionnelle est la suivante :</p>
+        <img src="page_boucles/cours1.png" alt="image cours">
+        <p>Tant que l'expression s'évalue à <em>True</em>, les instructions à l'intérieur du bloc (partie indentée) seront exécutées.</p>
+        <p>La boucle non conditionnelle permet de répéter <em>n</em> fois, <em>n</em> étant connu, une instruction ou un bloc d’instructions. Sa syntaxe est la suivante :</p>
+        <img src="page_boucles/cours2.png" alt="image cours2">
+        <p>Ce code peut être remplacé par le code :</p>
+        <img src="page_boucles/cours3.png" alt="image cours3">
+    </div>
+
+    <h3>Exercice 32</h3>
+    <p>Voici un script :</p>
+    <img src="page_boucles/exercice32corrigé.png" alt="exercice32corrigé">
+    <p>Quelle est la valeur finale de <em>x</em> ?</p>
+    <div class = "correction">
+        <a href="Exercices/Boucles/exercice32.py">Correction de l'exercice 32</a>
+    </div>
+
+    <h3>Exercice 33</h3>
+    <p>Voici un script :</p>
+    <img src="page_boucles/exercice33cor.png" alt="exercice33corrigé">
+    <p>Quelle est la valeur finale de x ?</p>
+    <div class="correction">
+        <a href="Exercices/Boucles/exercice33.py">Correction de l'exercice 33</a>
+    </div>
+
+    <h3>Exercice 34</h3>
+    <p>Soit le programme suivant :</p>
+    <img src="page_boucles/exercice34cor.png" alt="exercice34corrigé">
+    <p>Quel est le résultat attendu après l'exécution de ce programme ? Vérifiez votre réponse en testant le programme.</p>
+
+    <h3>Exercice 35</h3>
+    <p>Créez "un générateur automatique de punition".</p>
+    <p>Écrire une fonction qui prendra 2 paramètres : une chaîne de caractère et un nombre entier</p>
+    <p>Par exemple :</p>
+    <p>Si on passe comme paramètres à notre fonction : "Je ne dois pas discuter en classe" et 3, la fonction devra permettre d'afficher :</p>
+    <p>Je ne dois pas discuter en classe</p>
+    <p>Je ne dois pas discuter en classe</p>
+    <p>Je ne dois pas discuter en classe</p>
+    <div class = "correction">
+        <a href="Exercices/Boucles/exercice35.py">Correction de l'exercice 35</a>
+    </div>
+
+    <h3>Exercice 36</h3>
+    <p>Écrire une fonction permettant d'afficher une table de multiplication. Cette fonction devra prendre en paramètre la table désirée.</p>
+    <div class = "correction">
+        <a href="Exercices/Boucles/exercice36.py">Correction de l'exercice 36</a>
+    </div>
+
+    <h3>Exercice 37</h3>
+    <p>Ecrire une fonction qui prend en argument un entier positif et renvoie son nombre de chiffres.</p>
+    <div class = "correction">
+        <a href="Exercices/Boucles/exercice37.py">Correction de l'exercice 37</a>
+    </div>
+
+    <h3>Exercice 38</h3>
+    <p>Ecrire une fonction qui prend en argument un entier naturel en base 10 et qui renvoie l’écriture de cet entier en base 2.</p>
+    <div class = "correction">
+        <a href="Exercices/Boucles/exercice38.py">Correction de l'exercice 38</a>
+    </div>
+
+    <h3>Exercice 39</h3>
+    <p>Ecrire une fonction qui prend en argument un nombre écrit en base 2 et qui renvoie l’écriture de cet entier en base 10.</p>
+
+    <br><div class = "cours">
+        <p>Python propose un certain nombre d’instructions primitives comme <em>print</em> et <em>input</em> .</p>
+        <p>Le langage contient également de bibliothèques qui apportent des collections d’instructions plus spécialisées qui permettent d’effectuer de nouvelles taches.</p>
+        <p>Par exemple, il existe une bibliothèque <em>random</em> donnant accès à différentes instructions produisant des nombres aléatoires. Elle offre en particulier
+            une instruction <em>randint</em> pouvant être utilisée sous la forme <em>random.randint(1,6)</em> pour tir au hasard un nombre entier entre 1 et 6 inclus ou encore
+            une instruction <em>random</em> pouvant être utilisée sous la forme <em>random.random()</em> pour tirer au hasard un nombre décimal entre 0 inclus et 1 exclu.</p>
+        <p>L’utilisation de telles instructions nécessite la déclaration préalable, faite en début de programme : <em>import random</em></p>
+        <p>On peut aussi spécifiquement charger une ou plusieurs instructions de la façon suivante : <em>from random import randint</em></p>
+        <p>On appellera alors <em>randint</em> de la façon suivante : <em>randint(1,6)</em></p>
+    </div>
+
+    <h3>Exercice 40</h3>
+    <p>Créer un programme qui permette de jouer au jeu « devine le nombre ».</p>
+    <p> L’ordinateur choisit un nombre mystère, puis l’utilisateur propose à chaque tour un nombre jusqu’à ce qu’il trouve le nombre mystère.
+        L’ordinateur lui répond « C’est plus », « C’est moins » ou « Gagné ».</p>
+    <div class="cours">
+        <p>L’instruction break est une instruction spéciale qui ne peut être écrite que dans une boucle. Elle provoque l’arrêt immédiat de la boucle.</p>
+    </div>
+    <div class="correction">
+        <a href="Exercices/Boucles/exercice40.py">Correction de l'exercice 40</a>
+    </div>
+
+    <h3>Exercice 41</h3>
+    <p>Ecrire un programme qui demande à l’utilisateur d’entrer un nombre positif jusqu’à ce qu’il en entre un.</p>
+    <div class="cours">
+        <p>Attention : le compteur d’une boucle for existe toujours après l’exécution de la boucle en Python.</p>
+        <p>Ce n’est pas vrai dans tous les langages.</p>
+        <p>On recommande de ne plus utiliser cette variable après la boucle, sauf comme compteur d’une autre boucle.</p>
+    </div>
+    <div class="correction">
+        <a href="Exercices/Boucles/exercice41.py">Correction de l'exercice 41</a>
+    </div>
+
+    <div class="cours">
+        <p>Terminaison et méthode du variant dans une boucle <em>while</em>:</p>
+        <p>L’arrêt des itérations d’une boucle <em>while</em> étant conditionné à un échec, elles peuvent se poursuivre indéfiniment si la condition est toujours vérifiée.</p>
+        <p>On parle alors de <em>divergence</em>, de <em>non terminaison</em>, d’un <em>programme qui boucle</em> ou encore d’un <em>programme qui part en boucle infinie</em>.</p>
+        <p>Cela peut être obtenu de manière volontaire ou être causé par des erreurs de programmation.</p>
+        <p>Pour éviter ce dernier cas, il devient utile de réfléchir à la terminaison du programme en s’assurant que les conditions menant à l’arrêt de la boucle
+            finiront par être vérifiées.</p>
+    </div>
+
+    <h3>Exercice 42</h3>
+    <p>Soit le programme suivant :</p>
+    <img src="page_boucles/exercice42cor.png" alt="exercice42cor">
+    <p>Justifier que ce programme termine.</p>
+    <div class="cours">
+        <p>La technique de raisonnement utilisée au-dessus s’appelle la technique du variant.</p>
+        <p>Elle consiste à trouver parmi les éléments du programme une quantité qui est entière et positive et qui décroit strictement à
+            chaque tour de boucle, qu’on appelle le variant de boucle.</p>
+    </div>
+
+    <h3>Exercice 43</h3>
+    <p>On prétend que chacun des deux programmes suivants, après avoir demandé deux nombres entiers positifs <em>a</em> et <em>b</em> à l’utilisateur,
+        effectue la multiplication de <em>a</em> par <em>b</em>.</p>
+    <img src="page_boucles/exercice43cor1.png" alt="exercice43cor1">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="page_boucles/exercice43cor2.png" alt="exercice43cor2">
+    <p>Ces programmes terminent-ils ? Identifier pour chacun un variant de boucle.</p>
+
+    <h3>Exercice 44</h3>
+    <p>On prétend que chacun des deux programmes suivants calcule le nombre de chiffres d’un nombre positif saisi par l’utilisateur.</p>
+    <img src="page_boucles/exercice44cor1.png" alt="exercice44cor1">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="page_boucles/exercice44cor2.png" alt="exercice44cor2">
+    <p>Justifier qu’ils terminent avec la technique du variant.</p>
+    <p>Que se passe-t-il si on remplace a > 0 par a != 0 dans le premier programme ?</p>
+    <p>Et si on remplace <em>k < a + 1</em> par <em>k != a + 1</em> dans le deuxième ?</p>
+
+    <div class="li">
+		<input class="favorite style" type="button" onclick=window.location.href='page_ou_et.html'; value="Page précédente" />
+		<input class="favorite style" type="button" onclick=window.location.href='main.html'; value="Sommaire" />
+		<input class="favorite style" type="button" onclick=window.location.href='page_tableaux_listes.html'; value="Page suivante" />
+	</div>
+	
+		
+	<div id="scrollUp">
+		<a href="#top"><img src="bouton_haut.png" style="width:100px"/></a>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" />
+	<script src="script.js" defer></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <title>Projet NSI: Site Web</title>
+</head>
+<body>
+	<div class="barre">
+		<input class="banniere" type="button" onclick=window.location.href='https://www.python.org/downloads/'; value="Python" />
+		<input class="banniere" type="button" onclick=window.location.href='https://notepad-plus-plus.org/downloads/'; value="Notepad ++" />
+		<input class="banniere" type="button" onclick=window.location.href='https://www.jetbrains.com/fr-fr/pycharm/'; value="PyCharm" />
+		<input class="banniere" type="button" style="float:right" onclick=window.location.href='https://github.com/'; value="GitHub" /></br>
+	</div>
+	
+	<h1>Types Numériques</h1>
+		
+		<div class = "cours">
+			<p><mark>A retenir :</mark> <br/>
+			Le type d’une variable définit l’ensemble des valeurs qui peuvent lui être affectées ainsi que les opérations et fonctions utilisables. </p>
+			<p>Les types numériques de base sont <em>int</em> (ou <em>integer</em>) et <em>float</em>. <br/>
+			Le type <em>int</em> est utilisé pour représenter les nombres entiers. Leur taille n’est limitée que par la capacité de la machine et le temps nécessaire à leur utilisation. Un calcul avec des très grands entiers est possible en Python, mais peut prendre un temps important. <br/>
+			Le type <em>float</em> est utilisé pour représenter les nombres réels. Attention le point remplace la virgule utilisée en mathématiques en France. Les nombres du type <em>float</em>, forcément en nombre limité sont des décimaux qui servent à approximer des réels. </p>
+		</div> <br/><br/>
+		
+		<h3>Exercice 4 </h3>
+			<ol>
+				<li>Testez le programme suivant :</li>
+				<img src= "page_numériques/exercice4.png" alt= "image du programme de l'exercice 4" />
+				<li>Tapez <em>print(type(a))</em> puis <em>print(type(b))</em> à la suite du programme.</li>
+			</ol>
+		<br/> <div class = "correction">
+			<a href="Exercices/numériques/exercice4.py"> Correction de l'exercice 4 </a>
+		</div> <br/><br/>
+		
+		<div class = "cours">
+			<p>Si un nombre de type <em>int</em> dépasse la taille maximale utilisable par le processeur, il est découpé en deux parties ou plus et Python s’occupe des différentes opérations à effectuer. Cela prend alors plus de temps en mémoire et peut sérieusement ralentir un programme. </p>
+		</div> <br/><br/>
+		
+		<h3>Exercice 5</h3>
+			<p>Vérifier avec le programme suivant que la première boucle s’exécute au moins 100 fois plus vite que la deuxième. </p>
+			<img src= "page_numériques/exercice5.png" alt= "image du programme de l'exercice 5" />
+		<br/> <div class = "correction">
+			<a href="Exercices/numériques/exercice5.py"> Correction de l'exercice 5 </a>
+		</div> <br/><br/>
+		
+		<div class = "cours">
+			<p>La différence s’explique par la gestion des entiers longs dans la deuxième boucle. <br/>
+			La plupart des processeurs calculent avec des nombres binaires de taille limitée à 32 ou 64 bits. </p> <br/>
+			<p>Opérations sur les types numériques</p>
+			<p>Les opérations mathématiques de base sont notées : <em>a+b</em>, <em>a-b</em>, <em>a*b</em> pour la multiplication, <em>a/b</em> pour la division et <em>a**b</em> pour la puissance. </p>			
+		</div> <br/><br/>
+		
+		<h3>Exercice 6</h3>
+			<p>Écrire un programme permettant de répondre à la question suivante : "Quel est le type du résultat d'une addition d'un <em>int</em> et d'un <em>float</em> ?" </p>
+		<br/> <div class = "correction">
+			<a href="Exercices/numériques/exercice6.py"> Correction de l'exercice 6 </a>
+		</div> <br/><br/>
+		
+		<div class = "cours">
+			<p>Le résultat est de type <em>float</em> si <em>a</em> ou <em>b</em> est de type <em>float</em> et de type <em>int</em> uniquement si <em>a</em> et <em>b</em> sont de type <em>int</em>, sauf pour la division pour laquelle le résultat est toujours de type <em>float</em>. <br/>
+			La division entière <em>//</em> et l’opération modulo <em>%</em> utilisés avec des variables de type <em>int</em> donnent le quotient et le reste, de type <em>int</em>, de la division euclidienne. </p>
+			<p>Raccourcis d’écriture :</p>
+			<img src= "page_numériques/cours.png" alt= "image des variables du cours" />
+		</div> <br/><br/>
+		
+		<h3>Exercice 7</h3>
+			<p>Quel est le résultat de l’addition des flottants <em>0,2</em> et <em>0,1</em>. </p>
+		<br/> <div class = "correction">
+			<a href="Exercices/numériques/exercice7.py"> Correction de l'exercice 7</a>
+		</div> <br/><br/>
+		
+		
+	<br/><br/>
+	
+	<div class="li">
+		<input class="favorite style" type="button" onclick=window.location.href='page_variables.html'; value="Page précédente" />
+		<input class="favorite style" type="button" onclick=window.location.href='main.html'; value="Sommaire" />
+		<input class="favorite style" type="button" onclick=window.location.href='page_caractères.html'; value="Page suivante" /> 
+	</div>
+	
+	<div id="scrollUp">
+		<a href="#top"><img src="bouton_haut.png" style="width:100px"/></a>
+	</div>
+
+</body>
+</html>
