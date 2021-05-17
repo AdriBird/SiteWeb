@@ -1,4 +1,8 @@
-def pgs(e,tab):
+# Si le programme de l'exercice précédent a été réutilisée
+    ## Attention à leur donner des noms différents, sinon c'est une erreur qui est affichée
+
+
+def pgse(e,tab):
     cur_occ = 1
     max_occ = 0
     occurence = []
@@ -14,5 +18,19 @@ def pgs(e,tab):
             max_occ = occurence[i]
     return max_occ
 
-print(pgs(1, [6,6,6,2,3,4,5]))
+
+def pgs (tab):
+    c = 0
+    for i in range (len(tab)):
+        x = tab[i]
+        w = pgse(x,tab)
+        if w > c :
+            c = w
+    return c
+
+
+print (pgs([6,4,6,6,2,2,2,3,4,5]))
+
+
+
 
