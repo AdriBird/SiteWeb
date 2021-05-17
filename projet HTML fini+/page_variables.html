@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" />
+	<script src="script.js" defer></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <title>Projet NSI: Site Web</title>
+</head>
+<body>
+	<div class="barre">
+		<input class="banniere" type="button" onclick=window.location.href='https://www.python.org/downloads/'; value="Python" />
+		<input class="banniere" type="button" onclick=window.location.href='https://notepad-plus-plus.org/downloads/'; value="Notepad ++" />
+		<input class="banniere" type="button" onclick=window.location.href='https://www.jetbrains.com/fr-fr/pycharm/'; value="PyCharm" />
+		<input class="banniere" type="button" style="float:right" onclick=window.location.href='https://github.com/'; value="GitHub" /></br>
+	</div>
+	
+	<h1>Variables</h1>
+	
+		<div class = "cours">
+			<p>Les données utilisées dans un programme sont stockées dans des variables. <br/>
+			Ceci se fait par une affectation qui associe une donnée, représentée par une valeur ou une expression, avec un nom. <br/>
+			On peut imaginer une boite sur laquelle est écrit un nom et dans laquelle on place des informations diverses. <br/>
+			Le nom peut être n’importe quelle chaine alphanumérique, excepté certains mots réservés, sans commencer par un chiffre. <br/>
+			L’affection se fait à l’aide de l’opérateur <em>« = »</em>. <br/> 
+			<mark> Exemple :</mark> l’instruction <em>« coucou=3 »</em> affecte la valeur 3 à la valeur variable de nom coucou. </p>
+			
+			<p><mark>A retenir :</mark> </p>
+			<ul>
+				<li>Une variable est composé d’un nom (ou identificateur), d’une adresse en mémoire où est enregistrée une valeur (ou un ensemble de valeurs), d’un type qui définit ses propriétés.</li>
+				<li>Une expression a une valeur qui est le résultat d’une combinaison d’opérations sur des variables.</li>
+				<li>Une instruction est une commande qui doit être exécutée par la machine.</li>
+			</ul>
+			<p>Une expression se calcule, elle a une valeur alors qu’une instruction s’exécute et n’a pas de valeur. </p>
+			<ul>
+				<li>Une affectation (en Python) est une instruction qui commande à la machine de créer une variable en lui précisant son nom et sa valeur. </li>
+			</ul>
+			
+		</div>
+	
+		<h3>Exercice 1</h3>
+			<ol>
+				<li>Taper <em>points_de_vie = 12</em> dans l’éditeur et exécuter ce programme en cliquant sur le triangle vert.</li>
+				<li>Contrôler la valeur de la variable en tapant son nom dans la console puis en appuyant sur la touche « Entrée ».</li>
+				<li>Taper l’instruction <em>print(points_de_vie)</em> et observer le résultat.</li>
+			</ol>
+		<br/> <div class = "correction">
+			<a href="Exercices/Variables/exercice1.py"> Correction de l'exercice 1 </a>
+		</div> <br/><br/>
+		
+		<h3>Exercice 2</h3>
+			<p>Ecrire un programme qui additionnera le contenu de 2 variables (nom des variables : <em>a</em> et <em>b</em>). Le résultat de cette opération devra être référencé par une troisième variable nommée <em>resultat</em> (atention pas d'accent dans les noms de variable). Afficher le résultat. </p>
+		<br/> <div class = "correction">
+			<a href="Exercices/Variables/exercice2.py"> Correction de l'exercice 2 </a>
+		</div> <br/><br/>
+		
+		<h3>Exercice 3</h3>
+			<p>D'après vous, que fait ce programme ? </p>
+			<img src= "page_variables/exercice3.png" alt= "image du programme de l'exercice 3" />
+			<p>Vérifiez votre réponse en exécutant le programme </p>
+		<br/> <div class = "correction">
+			<a href="Exercices/Variables/exercice3.py"> Correction de l'exercice 3 </a>
+		</div> <br/><br/>
+		
+		
+	<div class = "cours">
+		<p>Détaillons ce qui se passe dans l’Exercice 3:</p>
+		<ul>
+			<li>nous créons une variable a qui référence l'entier 11</li>
+			<li>nous affichons à l'écran la valeur référencée par a (c'est-à-dire 11)</li>
+		</ul>
+		<p>La suite est un peu plus complexe, mais très importante à comprendre. Il va falloir lire la ligne <em>"a = a + 1"</em> de droite à gauche, décortiquons cette ligne :</p>
+		<ul>
+			<li><em>"a + 1"</em> : nous prenons la valeur actuelle de a (c'est-à-dire 11) et nous ajoutons 1 à 11, à droite de l'égalité nous avons donc maintenant la valeur 12</li>
+			<li>nous attribuons la valeur qui vient d'être calculée à la variable <em>a</em></li>
+			<li>nous affichons à l'écran la nouvelle valeur référencée par <em>a</em></li>
+		</ul>
+	</div>
+	
+	<br/><br/> <br/><br/>
+	
+	<div class="li">
+		<input class="favorite style" type="button" onclick=window.location.href='page_introduction.html'; value="Page précédente" />
+		<input class="favorite style" type="button" onclick=window.location.href='main.html'; value="Sommaire" />
+		<input class="favorite style" type="button" onclick=window.location.href='page_numériques.html'; value="Page suivante" /> 
+	</div>
+	
+	<div id="scrollUp">
+		<a href="#top"><img src="bouton_haut.png" style="width:100px"/></a>
+	</div>
+
+</body>
+</html>
