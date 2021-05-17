@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css" />
+	<script src="script.js" defer></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <title>Projet NSI: Site Web</title>
 </head>
 <body>
+	
+	<div class="barre">
+		<input class="banniere" type="button" onclick=window.location.href='https://www.python.org/downloads/'; value="Python" />
+		<input class="banniere" type="button" onclick=window.location.href='https://notepad-plus-plus.org/downloads/'; value="Notepad ++" />
+		<input class="banniere" type="button" onclick=window.location.href='https://www.jetbrains.com/fr-fr/pycharm/'; value="PyCharm" />
+		<input class="banniere" type="button" style="float:right" onclick=window.location.href='https://github.com/'; value="GitHub" /></br>
+	</div>
+	
 	<h1>Les booléens</h1>
-	<p>Voici les exercices du chapitre fonctions et leur correction :</p>
+	
+	<div class = "cours">
+		<p>
+			Si quelqu'un vous dit que "4 est égal à 5", vous lui répondez que "c'est faux". </br>
+			Si maintenant la même personne vous dit que "7 est égal à 7", vous lui répondrez que "c'est vrai". </br>
+			En Python, ces deux «affirmations» ("4 est égal à 5" et "7 est égal à 7") s'écriront "4 == 5" et "7 == 7" (notez bien le double signe égal).</br>
+		</p>
+	</div>
 	
 	
-	<h3>Exercice 20 : </h3>
+	<h3>Exercice 20 </h3>
 	<p>
 		Affichez la valeur de l’expression :</br>
 	</p>	
@@ -18,16 +35,25 @@
 		4 == 5</br></em>
 	</p>
 	<p>
-		En Python, "4 == 5" est appelé une expression.
+		En Python, <em>"4 == 5"</em> est appelé une expression.
 	</p>
 	<p>
 		Correction:</br>
 		Le résultat renvoyé est False.</br>
 	</p>
 	
+	<div class = "cours">
+		<p>
+			Pour l'instant nous avons vu deux grands types de données : les nombres (entier ou flottant) et les chaînes de caractères, il existe un troisième type tout aussi important que les deux premiers : les booléens.</br>
+			Un booléen est un type de données (bool en Python) qui ne peut prendre que deux valeurs : vrai ("<em>True</em>") ou faux ("<em>False</em>"). Une expression (comme par exemple <em>"4 == 5"</em>) est soit <em>True</em>, soit <em>False</em>. </br>
+		</p>
+		<p>
+			Attention : notez le double égal "<em>==</em>" qui permet de distinguer une expression et une affectation (référencement d'une valeur par une variable). Le fait de confondre le "simple égal" et le "double égal" est une erreur classique qu'il faut éviter. 
+		</p>
+	</div>	
 	
 	
-	<h3>Exercice 21 : </h3>
+	<h3>Exercice 21 </h3>
 	<p>
 		Soit le programme suivant : </br>
 	</p>	
@@ -43,10 +69,12 @@
 		Le résultat renvoyé est False.</br>
 	</p>
 	
+	<div class = "cours">
+		Il est possible d'utiliser aussi l'opérateur "différent de" : " <em>!=</em> "
+	</div>
 	
 	
-	
-	<h3>Exercice 22 : </h3>
+	<h3>Exercice 22 </h3>
 	<p>
 		Soit le programme suivant : </br>
 	</p>	
@@ -62,10 +90,21 @@
 		Le résultat renvoyé est True.</br>
 	</p>
 	
+	<div class = "cours">
+		<p>
+			Notez aussi l'existence des opérateurs :
+			<ul>
+				<li>"strictement inférieur à : " <em><</em> " </li>
+				<li>"strictement supérieur à : " <em>></em> "</li>
+				<li>"inférieur ou égal à : " <em><=</em> "</li>
+				<li>"supérieur ou égal à : " <em>>=</em> "</li>
+			</ul>
+			À chaque fois les valeurs des expressions utilisant ces opérateurs sont True (vrai) ou False (faux).
+		</p>
+	</div>
 	
 	
-	
-	<h3>Exercice 23 : </h3>
+	<h3>Exercice 23 </h3>
 	<p>
 		Soit le programme suivant : </br>
 	</p>	
@@ -82,9 +121,17 @@
 	</p>
 	
 	
-	<div class = "pages">
-		<a href = "page_fonctions.html"> Page précédente</a>
-		<a href = "page_conditions.html"> Page suivante</a>	</br>
-		<a href = "main.html"> Sommaire</a>
+	<div class="li">
+		<input class="favorite style" type="button" onclick=window.location.href='page_fonctions.html'; value="Page précédente" />
+		<input class="favorite style" type="button" onclick=window.location.href='main.html'; value="Sommaire" />
+		<input class="favorite style" type="button" onclick=window.location.href='page_conditions.html'; value="Page suivante" />
 	</div>
+	
+	
+	
+	<div id="scrollUp">
+		<a href="#top"><img src="bouton_haut.png" style="width:100px"/></a>
+	</div>	
+
 </body>
+</html>

@@ -12,7 +12,7 @@ def pgs(e,tab):
     for i in range(len(occurence)):
         if i >= 0 and occurence[i] > occurence[i-1]:
             max_occ = occurence[i]
-    print(max_occ)
+    return max_occ
 
-pgs(6, [6,6,6,2,3,4,5])
+print(pgs(1, [6,6,6,2,3,4,5]))
 

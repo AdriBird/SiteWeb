@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css" />
-    <title>Projet NSI: SIte Web - Ensembles</title>
+	<script src="script.js" defer></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <title>Projet NSI: SIte Web</title>
 </head>
 <body>
+	
+	<div class="barre">
+		<input class="banniere" type="button" onclick=window.location.href='https://www.python.org/downloads/'; value="Python" />
+		<input class="banniere" type="button" onclick=window.location.href='https://notepad-plus-plus.org/downloads/'; value="Notepad ++" />
+		<input class="banniere" type="button" onclick=window.location.href='https://www.jetbrains.com/fr-fr/pycharm/'; value="PyCharm" />
+		<input class="banniere" type="button" style="float:right" onclick=window.location.href='https://github.com/'; value="GitHub" /></br>
+	</div>
+	
 	<h1>Ensembles</h1>
 	
 		<div class = "cours">
@@ -15,7 +25,7 @@
 			En particulier, chercher à accéder au ième élément d’un ensemble provoque une erreur.</p>
 			<p> Comme pour un tableau, on peut obtenir la taille d’un ensemble à l’aide de la fonction prédéfinie <em>len</em>. </p>
 			<p> Pour tester si un élément appartient à un ensemble, on peut utiliser la construction <em>e in s</em>, et on peut parcourir tous les éléments d’un ensemble avec la construction <em>for e in s</em>. L’ordre de parcours n’est pas spécifié, on sait juste que chaque élément sera parcouru une unique fois. </p>
-		</div>
+		</div> <br/><br/>
 	
 		<h3>Exercice 100</h3>
 			<p>Construire un ensemble, puis demander sa taille, chercher à accéder à son deuxième élément, tester si un élément lui appartient, et faire afficher tous ses éléments.</p>
@@ -25,7 +35,7 @@
 		
 		<div class = "cours">
 			<p>On peut utiliser les opérations <em>|</em>, <em>&</em>, <em>-</em>  et <em>^</em> sur deux ensembles. </p>
-		</div>
+		</div> <br/><br/>
 		
 		<h3>Exercice 101</h3>
 			<p>Construire deux ensembles, puis tester les différentes opérations précédentes sur ces ensembles en expliquant leurs résultats.</p>
@@ -37,7 +47,7 @@
 		<div class = "cours">
 			<p>On peut construire un ensemble vide ainsi <em>s = set()</em>, puis lui ajouter des éléments avec <em>s.add(element)</em>. <br/>
 			On peut également construire un ensemble par compréhension.</p>
-		</div>
+		</div> <br/><br/>
 		
 		<h3>Exercice 102</h3>
 			<p>On cherche à observer le paradoxe des anniversaires qui dit que dans un groupe de 23 personnes, il y a une chance sur deux pour deux d’entre elles ait la même date d’anniversaire.</p>
@@ -50,10 +60,17 @@
 			<a href="Exercices/Ensembles/exercice102.py"> Correction de l'exercice 102 </a>
 		</div> <br/><br/>
 	
-	<div class = "pages">
-		<a href = "page_spécification.html">Page précédante</a>
-		<a href = "page_dictionnaires.html">Page suivante</a><br/>
-		<a href = "main.html">Sommaire</a>
+	
+	<div class="li">
+		<input class="favorite style" type="button" onclick=window.location.href='page_spécification.html'; value="Page précédente" />
+		<input class="favorite style" type="button" onclick=window.location.href='main.html'; value="Sommaire" />
+		<input class="favorite style" type="button" onclick=window.location.href='page_n-uplets.html'; value="Page suivante" />
 	</div>
+	
+		
+	<div id="scrollUp">
+		<a href="#top"><img src="bouton_haut.png" style="width:100px"/></a>
+	</div>
+
 </body>
 </html>

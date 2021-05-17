@@ -1,68 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <title>Projet NSI: Site Web - Tableaux et listes</title>
-    </head>
-    <body>
-
+</head>
+<body>
+	
+	<div class="barre">
+		<input class="banniere" type="button" onclick=window.location.href='https://www.python.org/downloads/'; value="Python" />
+		<input class="banniere" type="button" onclick=window.location.href='https://notepad-plus-plus.org/downloads/'; value="Notepad ++" />
+		<input class="banniere" type="button" onclick=window.location.href='https://www.jetbrains.com/fr-fr/pycharm/'; value="PyCharm" />
+		<input class="banniere" type="button" style="float:right" onclick=window.location.href='https://github.com/'; value="GitHub" /></br>
+	</div>
+	
     <h1>Les tableaux</h1>
-    <div class="cours">
-        <p>Un tableau permet de stocker plusieurs valeurs dans une seule variable et d’y accéder ensuite facilement.</p>
-    </div>
+	<h2>Notion de tableaux</h2>
+	
+		<div class="cours">
+			<p>Un tableau permet de stocker plusieurs valeurs dans une seule variable et d’y accéder ensuite facilement.</p>
+		</div>
 
-    <h3>Exercice 45</h3>
-    <p>Soit le programme suivant :</p>
-    <img src="page_tableaux_listes/exercice45cor.png" alt="exercice45cor">
-    <p>Exécutez le programme suivant et observez.</p>
-    <div class="cours">
-        <p>On obtient la taille du tableau <em>t</em> avec l’opération <em>len(t)</em></p>
-        <p>Pour accéder à une valeur contenue dans le tableau t, il faut utiliser la notation <em>t[i]</em> où <em>i</em> désigne le numéro de la case à laquelle on veut accéder. </p>
-        <p>Les cases sont numérotées à partir de zéro. Ainsi, la valeur contenue dans la première case est <em>t[0]</em>.</p>
-        <p>En Python, la case d’indice -1 est la dernière du tableau.</p>
-    </div>
-    
+		<h3>Exercice 45</h3>
+			<p>Soit le programme suivant :</p>
+			<img src="page_tableaux_listes/exercice45cor.png" alt="exercice45cor">
+			<p>Exécutez le programme suivant et observez.</p>
+		
+		<div class="cours">
+			<p>On obtient la taille du tableau <em>t</em> avec l’opération <em>len(t)</em></p>
+			<p>Pour accéder à une valeur contenue dans le tableau t, il faut utiliser la notation <em>t[i]</em> où <em>i</em> désigne le numéro de la case à laquelle on veut accéder. </p>
+			<p>Les cases sont numérotées à partir de zéro. Ainsi, la valeur contenue dans la première case est <em>t[0]</em>.</p>
+			<p>En Python, la case d’indice -1 est la dernière du tableau.</p>
+		</div>
+		
+	<h2>Modification du contenu d'un tableau</h2>
+		
+		<h3>Exercice 46</h3>
+			<p>Soit le programme suivant :</p>
+			<img src="page_tableaux_listes/exercice46cor.png" alt="exercice46cor">
+			<p>Quel est le résultat attendu après l'exécution de ce programme ? Vérifiez votre réponse en testant le programme.</p>
+			<p>
+				Correction:</br>
+				Le résultat renvoyé est <em>3  10</em>.</br>
+			</p>
+		
+		<div class="cours">
+			<p>Le contenu d’un tableau peut être modifié. Pour cela, on utilise une affectation, exactement comme on le ferait avec une variable.</p>
+		</div>	
+		
+	<h2>Construire de grands tableaux</h2>
+		
+		<div class="cours">
+			<p>Si on doit construire un tableau vraiment grand, il existe une opération dans le langage Python : t = [0] * 1000</p>
+			<p>On obtient ici un tableau t de taille 1000 dont toutes les cases contiennent la valeur 0.</p>
+		</div>
 
-    <h3>Exercice 46</h3>
-    <p>Soit le programme suivant :</p>
-    <img src="page_tableaux_listes/exercice46cor.png" alt="exercice46cor">
-    <p>Quel est le résultat attendu après l'exécution de ce programme ? Vérifiez votre réponse en testant le programme.</p>
-    <p>Le contenu d’un tableau peut être modifié. Pour cela, on utilise une affectation, exactement comme on le ferait avec une variable.</p>
-    <div class="correction">
-        <p>Si on doit construire un tableau vraiment grand, il existe une opération dans le langage Python : t = [0] * 1000</p>
-        <p>On obtient ici un tableau t de taille 1000 dont toutes les cases contiennent la valeur 0.</p>
-    </div>
+		<h3>Exercice 47</h3>
+			<p>Construire un tableau de taille 200 qui contient les carrés des 200 premiers entiers.</p>
+			<div class = "correction">
+				<a href="Exercices/Tableaux_Listes/exercice47.py">Correction de l'exercice 47</a>
+			</div>
 
-    <h3>Exercice 47</h3>
+		<h3>Exercice 48</h3>
+			<p>Ecrire une fonction tableau_aleatoire(n,a,b) qui renvoie un tableau de taille n contenant des entiers tirés au hasard entre a et b.</p>
+			<div class="correction">
+				<a href="Exercices/Tableaux_Listes/exercice48.py">Correction de l'exercice 48</a>
+			</div>
+	
+	<h2>Concaténation</h2>
+	
+		<h3>Exercice 49</h3>
+			<p>Soit le programme suivant :</p>
+			<img src="page_tableaux_listes/exercice49cor.png" alt="exercice49cor">
+			<p>Quel est le résultat attendu après l'exécution de ce programme ? Vérifiez votre réponse en testant le programme.</p>
+			<p>
+				Correction:</br>
+				On veut afficher toutes les valeurs de t3, soit t1 + t2.</br>
+				Le résultat renvoyé est 1,2,3,4,5,6.</br>
+			</p>
+			<p>Il est possible de concaténer deux tableaux, c’est-à-dire de construire un nouveau tableau contenant, bout à bout, les éléments des deux tableaux. On le fait avec l’opération +.</p>
 
-    
-    <h2>Les tableaux avancés</h2>
-    <h3>Exercice 74</h3>
-    <p>Soit le programme suivant :</p>
-    <img src="page_tableaux_listes/exercice74cor.png" alt="exercice74cor">
-    <p>Tester ce programme et observer le résultat.</p>
-    <p>Par quel programme utilisant une syntaxe déjà connue peut-on le remplacer ?</p>
-    <div class="correction">
-        <p>On peut parcourir les éléments d’un tableau avec la construction <em>for e in t</em> où e est une variable qui va recevoir
-            successivement tous les éléments de t.</p>
-        <p>L’itération directe sur les éléments du tableau correspond à une vision un peu plus abstraite.</p>
-        <p>Le tableau est ici ramené à une collection d’éléments dans lequel on a masqué le fait que chaque élément était associé à un indice i. </p>
-        <p>Cette forme est plus simple à lire et à écrire, mais n’est applicable que lorsqu’on n’a pas besoin d’utiliser l’indice i. </p>
-    </div>
+		<h3>Exercice 50</h3>
+			<p>Soit le programme suivant :</p>
+			<img src="page_tableaux_listes/exercice50cor.png" alt="exercice50">
+		
+		<div class="cours">
+			<p>Lorsqu’on tape l’instruction t=[1,2,7], la valeur affectée à la variable t est l’adresse mémoire de l’espace alloué au tableau.  On peut représenter la situation ainsi :</p>
+			<img src="page_tableaux_listes/cours4.png" alt="cours4">
+			<p>Si maintenant, on tape l’instruction u=t, on se retrouve dans la situation suivante :</p>
+			<img src="page_tableaux_listes/cours5.png" alt="cours5">
+			<p>Autrement dit, les deux variables t et u désignent le même tableau et toute modification dans le tableau t sera visible dans le tableau u.</p>
+		</div>
 
-    <h3>Exercice 75</h3>
-    <p>Ecrire une fonction qui renvoie la valeur maximale d’un tableau en utilisant la construction précédente.</p>
+	<h2>Tableaux et variables</h2>
+	
+		<h3>Exercice 51</h3>
+			<p>Ecrire une fonction copie(tab) qui prend en paramètre un tableau tab et qui renvoie une copie de ce tableau.</p>
+			<p>Vérifier qu’elle fonctionne bien.</p>
+		<div class="correction">
+			<a href="Exercices/Tableaux_Listes/exercice51.py">Correction de l'exercice 51</a>
+		</div>
+
+		<h3>Exercice 52</h3>
+			<p>Ecrire une fonction echange(tab,i,j) qui échange dans le tableau tab les éléments d’indices i et j.</p>
+		<div class="correction">
+			<a href="Exercices/Tableaux_Listes/exercice52.py">Correction de l'exercice 52</a>
+		</div>
+
+	<h2>Les chaînes de caractères</h2>
+	
+		<div class = "cours">
+			<p>Les chaînes de caractères offrent une certaine ressemblance avec les tableaux. En particulier, on peut obtenir la taille d’une chaîne de caractères avec la fonction len et accéder au i-ième caractère avec les crochets.</p>
+			<p>En revanche, contrairement aux tableaux, les caractères d’une chaîne ne peuvent pas être modifiés.</p>
+		</div>
+
+		<h3>Exercice 53</h3>
+			<p>Ecrire une fonction ordre(m1,m2) qui prend en paramètre deux mots m1 et m2 sous la forme de chaines de caractères  et qui renvoie True si m1 est avant m2 dans l’ordre du dictionnaire ou si m1 est égal à m2.</p>
+		<div class="correction">
+			<a href="Exercices/Tableaux_Listes/exercice53.py">Correction de l'exercice 53</a>
+		</div>
+
+	<h2>Problèmes</h2>
+	
+		<h3>Exercice 54</h3>
+			<p>Ecrire une fonction appartient prenant en paramètre une valeur val et un tableau tab  et qui renvoie True si la valeur apparait au moins une fois dans le tableau tab et False sinon.</p>
+		<div class="correction">
+			<a href="Exercices/Tableaux_Listes/exercice54.py">Correction de l'exercice 54</a>
+		</div>
+
+		<h3>Exercice 55</h3>
+		<p>Créez une fonction nb_occurrences qui prend en argument un tableau tab et une valeur val et qui compte le nombre d’occurrences de cette valeur dans le tableau (c’est-à-dire le nombre de fois que cette valeur apparait dans le tableau).</p>
+		<p>Testez cette fonction sur le tableau tab = [2, 3, 5, 7, 1, 3, 8, 3, 6, 3] et la valeur val = 3.</p>
+		<div class="correction">
+			<a href="Exercices/Tableaux_Listes/exercice55.py">Correction de l'exercice 55</a>
+		</div>
+
+		<h3>Exercice 56</h3>
+		<p>Ecrire une fonction couple qui prend en argument un tableau tab et deux valeurs a et b et teste s’il existe dans le tableau une occurrence de la valeur a immédiatement suivie d’une occurrence de la valeur b. Elle renvoie True si c’est le cas et False sinon</p>
+		<div class="correction">
+			<a href="Exercices/Tableaux_Listes/exercice56.py">Correction de l'exercice 56</a>
+		</div>
+
+		<h3>Exercice 57</h3>
+		<p>Ecrire une fonction  couple_distant qui prend en argument un tableau tab et deux valeurs a et b et teste s’il existe dans le tableau une occurrence de la valeur a suivie d’une occurrence de la valeur b, dans cet ordre, mais pas nécessairement consécutives. Elle renvoie True si c’est le cas et False sinon.</p>
+		<div class="correction">
+			<a href="Exercices/Tableaux_Listes/exercice57.py">Correction de l'exercice 57</a>
+		</div>
+
+		<h3>Exercice 58</h3>
+		<p>Ecrire une fonction sous_mot(tab1,tab2) qui renvoie True si tous les éléments du tableau tab1 apparaissent dans l’ordre dans le tableau tab2 et False sinon.</p>
+		<div class="correction">
+			<a href="Exercices/Tableaux_Listes/exercice58.py">Correction de l'exercice 58</a>
+		</div>
+
+		<h3>Exercice 59</h3>
+			<p>Ecrire une fonction pgs(e,tab) qui renvoie la longueur de la plus grande séquence d’occurrences consécutives  de l’élément e dans le tableau tab.</p>
+		<div class="correction">
+			<a href="Exercices/Tableaux_Listes/exercice59.py">Correction de l'exercice 59</a>
+		</div>
+
+		<h3>Exercice 60</h3>
+			<p>Ecrire une fonction pgs(tab) qui renvoie la longueur de la plus grande séquence d’éléments identiques consécutifs dans le tableau tab.</p>
+		<div class="correction">
+			<a href="Exercices/Tableaux_Listes/exercice60.py">Correction de l'exercice 60</a>
+		</div>
+
+	<h2>Variant de boucle</h2>
+	
+		<h3>Exercice 61</h3>
+			<p>La fonction suivante renvoie True si la valeur v est présente dans le tableau t.</p>
+			<img src="page_tableaux_listes/exercice61cor.png" alt="exercice61cor">
+
+		<h3>Exercice 62</h3>
+
+		<p>On prétend que la fonction suivante affiche une certaine alternance d’éléments des deux tableaux t1 et t2.</p>
+		<img src="page_tableaux_listes/exercice62cor.png" alt="exercice62cor">
+		<p>Justifier que cette fonction termine à l’aide de la technique du variant.</p>
+		<div class="correction">
+			<a href="Exercices/Tableaux_Listes/exercice62.py">Correction de l'exercice 62</a>
+		</div>
+		
+	<br/><br/>
 
 
+	<div class="li">
+		<input class="favorite style" type="button" onclick=window.location.href='page_boucles.html'; value="Page précédente" />
+		<input class="favorite style" type="button" onclick=window.location.href='main.html'; value="Sommaire" />
+		<input class="favorite style" type="button" onclick=window.location.href='page_boucles_avancées.html'; value="Page suivante" />
+	</div>
+	
+	<div id="scrollUp">
+		<a href="#top"><img src="bouton_haut.png" style="width:100px"/></a>
+	</div>
 
 
-
-    <div class="pages">
-        <a href="page_boucles.html">Page précédante</a>
-        <a href="page_spécification.html">Page suivante</a><br>
-        <a href="main.html">Sommaire</a>
-    </div>
-    </body>
+</body>
 </html>

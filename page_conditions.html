@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css" />
-    <title>Projet NSI: SIte Web - Conditions</title>
+	<script src="script.js" defer></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <title>Projet NSI: SIte Web</title>
 </head>
 <body>
+	
+	<div class="barre">
+		<input class="banniere" type="button" onclick=window.location.href='https://www.python.org/downloads/'; value="Python" />
+		<input class="banniere" type="button" onclick=window.location.href='https://notepad-plus-plus.org/downloads/'; value="Notepad ++" />
+		<input class="banniere" type="button" onclick=window.location.href='https://www.jetbrains.com/fr-fr/pycharm/'; value="PyCharm" />
+		<input class="banniere" type="button" style="float:right" onclick=window.location.href='https://github.com/'; value="GitHub" /></br>
+	</div>
+	
 	<h1>Conditions</h1>
 	
 		<div class = "cours">
@@ -60,10 +70,17 @@
 			<a href="Exercices/Conditions/exercice28.py"> Correction de l'exercice 28</a>
 		</div> <br/><br/>
 	
-	<div class = "pages">
-		<a href = "page_booléens.html">Page précédante</a>
-		<a href = "page_ou_et.html">Page suivante</a><br/>
-		<a href = "main.html">Page d'acceuil</a>
+
+	<div class="li">
+		<input class="favorite style" type="button" onclick=window.location.href='page_booléens.html'; value="Page précédente" />
+		<input class="favorite style" type="button" onclick=window.location.href='main.html'; value="Sommaire" />
+		<input class="favorite style" type="button" onclick=window.location.href='page_ou_et.html'; value="Page suivante" />
 	</div>
-	</body>
+	
+		
+	<div id="scrollUp">
+		<a href="#top"><img src="bouton_haut.png" style="width:100px"/></a>
+	</div>
+
+</body>
 </html>

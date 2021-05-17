@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css" />
-    <title>Projet NSI: SIte Web - Dictionnaire</title>
+	<script src="script.js" defer></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <title>Projet NSI: SIte Web</title>
 </head>
 <body>
+	
+	<div class="barre">
+		<input class="banniere" type="button" onclick=window.location.href='https://www.python.org/downloads/'; value="Python" />
+		<input class="banniere" type="button" onclick=window.location.href='https://notepad-plus-plus.org/downloads/'; value="Notepad ++" />
+		<input class="banniere" type="button" onclick=window.location.href='https://www.jetbrains.com/fr-fr/pycharm/'; value="PyCharm" />
+		<input class="banniere" type="button" style="float:right" onclick=window.location.href='https://github.com/'; value="GitHub" /></br>
+	</div>
+	
 	<h1>Dictionnaires</h1>
 	<h2>Les bases</h2>
 	
@@ -19,7 +29,7 @@
 			<p> On peut supprimer une entrée du dictionnaire avec l’instruction <em>del</em>. </p>
 			<p> L’instruction <em>clé in d</em> renvoie vrai si le dictionnaire <em>d</em> contient la clé <em>clé</em> et faux sinon. </p>
 			<p> Enfin l’instruction <em>len</em> permet d’obtenir la taille du dictionnaire. </p>
-		</div>
+		</div> <br/><br/>
 	
 		<h3>Exercice 105</h3>
 			<p>Créer un dictionnaire dont les clés seront des prénoms de personnes.<br/>
@@ -34,7 +44,7 @@
 			<p>On peut parcourir les clés d’un dictionnaire <em>d</em> avec l’instruction suivante : <em>for clé in d</em>. </br>
 			On peut obtenir un tableau contenant toutes les clés de <em>d</em> avec : <em>list(d.keys())</em> ou <em>list(d)</em>. </br>
 			On peut obtenir un tableau contenant toutes les valeurs de <em>d</em> avec : <em>list(d.values())</em>. Ce tableau contiendra autant de fois chaque valeur qu’elles apparaissent dans le dictionnaire et aura donc la même taille que ce dernier.</p>
-		</div>
+		</div> <br/><br/>
 	
 		<h3>Exercice 106</h3>
 			<p>Utiliser chacune des notions présentées ci-dessus sur le dictionnaire de l’exercice précédent pour vous les approprier.</p>
@@ -44,7 +54,7 @@
 	
 		<div class = "cours">
 			<p>On peut également construire un dictionnaire par compréhension.</p>
-		</div>
+		</div> <br/><br/>
 	
 		<h3>Exercice 107</h3>
 			<p>Construire par compréhension un dictionnaire qui contient comme clés les dix premiers entiers et comme valeurs associées les cubes de ces nombres.</p>
@@ -72,10 +82,16 @@
 			<a href="Exercices/Dictionnaires/exercice110.py"> Correction de l'exercice 110</a> 
 		</div> <br/><br/>
 		
-		
-	<div class = "pages">
-		<a href = "page_ensembles.html">Page précédante</a><br/>
-		<a href = "main.html">Sommaire</a>
+	<div class="li">
+		<input class="favorite style" type="button" onclick=window.location.href='page_n-uplets.html'; value="Page précédente" />
+		<input class="favorite style" type="button" onclick=window.location.href='main.html'; value="Sommaire" />
 	</div>
+		
+		
+	
+	<div id="scrollUp">
+		<a href="#top"><img src="bouton_haut.png" style="width:100px"/></a>
+	</div>
+
 </body>
 </html>
